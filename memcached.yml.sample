@@ -1,0 +1,30 @@
+development:
+  namespace: default
+  gzip: false
+  ttl: 0
+  servers:
+    - 0.0.0.0
+
+test:
+  namespace: default
+  gzip: false
+  ttl: 0
+  servers:
+    - 0.0.0.0
+
+production:  
+  namespace: default
+  gzip: false
+  ttl: 0
+  servers:
+    - 0.0.0.0:11211
+    - 0.0.0.0:11212
+
+  secondary:
+    namespace: default
+    gzip: false
+    ttl: 0
+    servers:
+      - 0.0.0.0:11213
+      - 0.0.0.0:11214
+

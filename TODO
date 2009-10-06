@@ -1,0 +1,3 @@
+* socket timeouts
+* blow up on memcached 1.2.2
+* auto mix into activerecord and figure out how to not clash with ActiveRecord::Base.cache (query caching)

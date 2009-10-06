@@ -1,0 +1,13 @@
+CacheBar
+========
+
+CacheBar is a pure ruby implementation of memcached client protocol.  Several things to note:
+
+1. unlike default memcached behavior, incr/decr will automatically and safely create the underlying
+   key if it doesn't already exist.  this saves you a step of creating the key if it doesn't exist.
+2. gzip is supported by passing in :gzip => true into options of any setting function.
+3. strings and integers are stored natively in memcached (allowing incr/decr/prepend/append to
+   work). everything else is serialized using ruby Marshal dump/load.
+4. default ttl is 0, meaning never expire
+
+Copyright (c) 2009 Warren Konkel, released under the MIT license
