@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name     = "cache_bar"
-  s.version  = "0.0.1"
+  s.version  = "0.0.2"
   s.date     = "2009-10-06"
   s.summary  = "A pure ruby memcached client."
   s.email    = "wkonkel@gmail.com"

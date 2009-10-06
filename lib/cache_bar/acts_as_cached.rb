@@ -33,3 +33,7 @@ Object.class_eval do
     end
   end
 end
+
+# hooks into rails
+ActionView::Base.send(:acts_as_cached)
+ActionController::Base.send(:acts_as_cached)

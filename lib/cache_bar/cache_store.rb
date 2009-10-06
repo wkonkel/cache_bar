@@ -34,3 +34,5 @@ class CacheBar::CacheStore < ActiveSupport::Cache::Store
     CacheBar.pool.decr(key, amount)
   end
 end
+
+silence_warnings { Object.const_set "RAILS_CACHE", CacheBar::CacheStore.new }
